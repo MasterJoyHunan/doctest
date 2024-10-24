@@ -7,18 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.PAT }}
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 18.4.0
-      - run: |-
-          echo ${{ secrets.PAT }}
-          npm install
-          npm run docs:build
-          git config --global user.email "github-actions@gmail.com"
-          git config --global user.name "github-actions"
-          git add --all
-          git commit -m "update by github actions"
-          git push origin master
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
