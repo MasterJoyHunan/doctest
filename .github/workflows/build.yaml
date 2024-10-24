@@ -15,4 +15,5 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_branch: master
-          publish_dir: ./docs/.vitepress/dist
+          publish_dir: docs/.vitepress/dist
+          destination_dir: docs/.vitepress/dist
