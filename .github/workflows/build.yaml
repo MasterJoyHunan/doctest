@@ -13,5 +13,6 @@ jobs:
           node-version: 18.4.0
       - uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT }}
           publish_branch: master
+          publish_dir: ./docs/.vitepress/dist
