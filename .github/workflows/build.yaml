@@ -15,9 +15,10 @@ jobs:
           npm install
           npm run docs:build
           ls -a docs/.vitepress/dist
+          cp -rf docs/.vitepress/dist ./
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.PAT }}
           publish_branch: master
-          publish_dir: ./docs/.vitepress/dist
+          publish_dir: ./dist
           destination_dir: docs/.vitepress/dist
