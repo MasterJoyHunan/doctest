@@ -1,0 +1,10 @@
+### k8s 的 api
+
+```
+127.0.0.1:8001
+
+curl --cecret /var/run/secrets/kubernetes.io/serviceaccount/ca.crt https://kubernetes
+export CURL_CA_BUNDLE=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+export TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+curl -H "Authorization: Bearer $TOKEN" https://kubernetes
+```
