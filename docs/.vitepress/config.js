@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     lang: 'zh-CN',
     title: '随手笔记',
-    base: '/',
+    base: '/doctest/',
 
     themeConfig: {
         // nav: [
