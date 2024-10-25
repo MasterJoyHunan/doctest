@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.DPuwY6B9.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"go-zero/core/超时.md","filePath":"go-zero/core/超时.md","lastUpdated":1729761429000}'),r={name:"go-zero/core/超时.md"};function a(c,s,n,_,d,p){return o(),t("div")}const f=e(r,[["render",a]]);export{m as __pageData,f as default};
