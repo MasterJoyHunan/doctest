@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a}from"./chunks/framework.DPuwY6B9.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"istio/6.坑.md","filePath":"istio/6.坑.md","lastUpdated":1729815932000}'),o={name:"istio/6.坑.md"};function s(r,i,c,n,_,d){return a(),e("div")}const f=t(o,[["render",s]]);export{m as __pageData,f as default};
